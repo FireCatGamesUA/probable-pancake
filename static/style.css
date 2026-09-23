@@ -20,6 +20,34 @@ body{
     background-color: var(--bg-100);
     color: var(--text-100);
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: var(--bg-200);
+    padding: 1rem;
+    text-align: center;
+}
+main{
+    flex-grow: 1;
+    padding: 1rem;
+}
+footer{
+    background-color: var(--bg-300);
+    padding: 1rem;
+    text-align: center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+.ad{
+    background-color: var(--primary-300);
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--bg-300);
 }
 .modal{
     position: fixed;
@@ -33,7 +61,30 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    background-color: var(--bg-300);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
 }
+
+.modal input, .modal textarea, .add-button{
+    background-color: var(--accent-100);
+    border: none;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--accent-200);
+}
+
 .open{
     position: fixed;
     bottom: 1rem;
