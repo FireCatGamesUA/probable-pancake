@@ -1,0 +1,10 @@
+@font-face {
+    font-family: default_text;
+    src: url(Caveat-Regular.ttf);
+}
+@font-face {
+    font-family: title;
+    src: url(Pacifico-Regular.ttf);
+}
+$font: default_text;
+$title: title;
